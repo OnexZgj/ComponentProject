@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/space_80"
+    android:paddingRight="@dimen/space_80"
+    android:paddingBottom="@dimen/space_20"
+    android:background="@drawable/item_board_bg">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+    <com.onexzgj.onexlibrary.widget.LoadingView
+        android:id="@+id/loading_view"
+        android:layout_width="@dimen/space_200"
+        android:layout_height="@dimen/space_200" />
+
+
+        <TextView
+            android:id="@+id/loading_view_show"
+            android:layout_marginTop="@dimen/space_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_36px"
+            android:textColor="@color/red"
+            android:text="正在请求数据..."/>
+
+    </LinearLayout>
+
+</FrameLayout>

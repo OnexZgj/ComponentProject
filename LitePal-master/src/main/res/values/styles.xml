@@ -1,0 +1,22 @@
+<resources>
+
+
+
+
+        <!--Dialog样式   没有四周边框-->
+        <style name="dialog"  parent="android:Theme.Dialog">
+            <item name="android:windowFrame">@null</item>
+            <item name="android:windowIsFloating">true</item>
+            <item name="android:windowIsTranslucent">false</item>
+            <item name="android:windowNoTitle">true</item>
+            <!-- 除去title -->
+            <item name="android:windowContentOverlay">@null</item>
+            <!-- 背景设为透明 -->
+            <item name="android:windowBackground">@color/transparent</item>
+            <!-- 屏幕背景不变暗 -->
+            <item name="android:backgroundDimEnabled">true</item>
+        </style>
+
+
+
+</resources>
