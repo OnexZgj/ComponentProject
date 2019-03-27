@@ -7,6 +7,7 @@ import android.widget.Button;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.bumptech.glide.Glide;
 
 @Route(path="/app/module/mainActivity")
 public class MainActivity extends AppCompatActivity {
@@ -25,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
 //                ServiceFactory.getInstance().getIloginService().launch(LiveActivity.this,"");
             }
         });
+
+        Glide.with(this);
 
         Button btnTwo = findViewById(R.id.btn_two);
         btnTwo.setOnClickListener(new View.OnClickListener() {

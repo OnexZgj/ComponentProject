@@ -1,1 +1,1 @@
-include ':app', ':live', ':login', ':LitePal-master', ':onexlibrary'
+include ':app', ':live', ':login', ':LitePal-master', ':onexlibrary', ':notepad'

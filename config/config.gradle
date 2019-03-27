@@ -1,0 +1,29 @@
+ext{
+    version = [
+            minSdkVersion :21,
+            targetSdkVersion : 38,
+            appVersionCode: 1,
+            appVersionName :"1.0",
+
+            sdkCompileVersion : 26,
+            compileSdkVersion : "28.0.0"
+    ]
+
+    deps =[
+            support: [
+                    recycleview: "com.android.support:recyclerview-v7:${version.compileSdkVersion}",
+                    appcompat: "com.android.support:appcompat-v7:${version.compileSdkVersion}",
+                    support_v4: "com.android.support:support-v4:${version.compileSdkVersion}",
+                    preference_v14: "com.android.support:preference-v14:${version.compileSdkVersion}"
+
+            ],
+
+            common:[
+                    //glide
+                    glide: 'com.github.bumptech.glide:glide:4.4.0'
+
+            ]
+    ]
+
+
+}

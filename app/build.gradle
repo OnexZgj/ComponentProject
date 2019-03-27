@@ -35,11 +35,11 @@ dependencies {
     api 'com.alibaba:arouter-api:1.4.1'
     annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
     implementation project(':onexlibrary')
-
     if (!liveRunAlone.toBoolean()) {
         api project(':live')
     }
     if (!loginRunAlone.toBoolean()) {
         api project(':login')
     }
+
 }
