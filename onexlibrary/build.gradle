@@ -11,13 +11,11 @@ android {
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
-
         javaCompileOptions {
             annotationProcessorOptions {
                 arguments = [AROUTER_MODULE_NAME: project.getName()]
             }
         }
-
     }
 
     buildTypes {
@@ -67,7 +65,16 @@ dependencies {
     api 'com.orhanobut:logger:2.2.0'
     //agentweb
     api 'com.just.agentweb:agentweb:4.0.2'
+
+
+
+
     api 'com.alibaba:arouter-api:1.4.1'
     annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
     //    api 'com.miomin:shswiperefreshlayout:1.3.0'
+
+    
+
+
+
 }

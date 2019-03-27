@@ -2,10 +2,8 @@ package com.onexzgj.module.moduledemo;
 
 import android.app.Application;
 
-import com.onexzgj.module.login.LoginApp;
 import com.onexzgj.onexlibrary.GlobalApplication;
 import com.onexzgj.onexlibrary.lib.IAppComponent;
-import com.onexzgj.onexlibrary.lib.ServiceFactory;
 
 /**
  * des：
@@ -17,7 +15,7 @@ public class App extends GlobalApplication implements IAppComponent {
     public void onCreate() {
         super.onCreate();
 
-        LoginApp app=new LoginApp();
+//        LoginApp app=new LoginApp();
 
         try {
             Class<?> aClass = Class.forName("com.onexzgj.module.login.LoginApp");

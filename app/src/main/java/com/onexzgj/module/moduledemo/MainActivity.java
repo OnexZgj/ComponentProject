@@ -5,9 +5,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.onexzgj.module.login.LoginService;
-import com.onexzgj.onexlibrary.lib.ServiceFactory;
+import com.alibaba.android.arouter.facade.annotation.Route;
+import com.alibaba.android.arouter.launcher.ARouter;
 
+@Route(path="/app/module/mainActivity")
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -19,13 +20,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-
+                ARouter.getInstance().build("/login/activity/loginActivity").navigation();
 //                ServiceFactory.getInstance().setIloginService(new LoginService());
-                ServiceFactory.getInstance().getIloginService().launch(MainActivity.this,"");
+//                ServiceFactory.getInstance().getIloginService().launch(LiveActivity.this,"");
             }
         });
 
-
-
+        Button btnTwo = findViewById(R.id.btn_two);
+        btnTwo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ARouter.getInstance().build("/app/module/twoActivity").navigation();
+            }
+        });
     }
+
 }

@@ -5,6 +5,7 @@ import android.content.Context;
 import android.os.Handler;
 import android.view.Gravity;
 
+import com.alibaba.android.arouter.launcher.ARouter;
 import com.blankj.utilcode.util.ToastUtils;
 import com.blankj.utilcode.util.Utils;
 import com.onexzgj.onexlibrary.lib.IAppComponent;
@@ -37,7 +38,7 @@ public class GlobalApplication extends Application  implements IAppComponent {
         handler = new Handler();
         mainThreadId = android.os.Process.myTid();
         Utils.init(this);
-//        intARouter();
+        intARouter();
 
 //        SQLiteDatabase.loadLibs(this);
         Logger.addLogAdapter(new AndroidLogAdapter());
@@ -54,15 +55,15 @@ public class GlobalApplication extends Application  implements IAppComponent {
 
 
 
-//    /**
-//     * 初始化路由
-//     */
-//    private void intARouter() {
-//        // 这两行必须写在init之前，否则这些配置在init过程中将无效
-//        ARouter.openLog();     // 打印日志
-//        ARouter.openDebug();   // 开启调试模式(如果在InstantRun模式下运行，必须开启调试模式！线上版本需要关闭,否则有安全风险)
-//        ARouter.init(this); // 尽可能早，推荐在Application中初始化
-//    }
+    /**
+     * 初始化路由
+     */
+    private void intARouter() {
+        // 这两行必须写在init之前，否则这些配置在init过程中将无效
+        ARouter.openLog();     // 打印日志
+        ARouter.openDebug();   // 开启调试模式(如果在InstantRun模式下运行，必须开启调试模式！线上版本需要关闭,否则有安全风险)
+        ARouter.init(this); // 尽可能早，推荐在Application中初始化
+    }
 
 
     /**

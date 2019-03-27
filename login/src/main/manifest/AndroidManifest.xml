@@ -4,7 +4,7 @@
 
     <application
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity">
+        <activity android:name="com.onexzgj.module.login.LoginActivity">
         </activity>
     </application>
 
