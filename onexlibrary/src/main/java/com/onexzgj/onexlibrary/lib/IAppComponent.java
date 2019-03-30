@@ -10,7 +10,7 @@ import android.app.Application;
 public interface IAppComponent {
 
     String[] compoment=new String[]{
-//        "com.onexzgj.module.live.LiveApp",
+        "com.onexzgj.module.live.LiveApp",
             "com.onexzgj.module.login.LoginApp"
     };
 

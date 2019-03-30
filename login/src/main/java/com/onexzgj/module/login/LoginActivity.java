@@ -15,13 +15,6 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        Button btnToLive = findViewById(R.id.btn_al_live);
-        btnToLive.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ARouter.getInstance().build("/live/livemodule/liveActivity")
-                        .withString("onex","onexzgj").navigation();
-            }
-        });
+
     }
 }
