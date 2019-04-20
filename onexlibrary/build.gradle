@@ -29,13 +29,18 @@ android {
 
 dependencies {
 
-   def dependencies = rootProject.ext.deps
+    def dep = rootProject.ext.deps
 
-    api dependencies.support.appcompat
-    api dependencies.support.support_v4
-    api dependencies.support.preference_v14
+    api dep.support.appcompat
+    api dep.support.support_v4
+    api dep.support.preference_v14
 
-    api dependencies.common.glide
+    api dep.common.glide
+
+    //arouter
+    api dep.common.arouter
+    annotationProcessor dep.common.arouter_compiler 
+
 
     api 'com.android.support.constraint:constraint-layout:1.1.3'
     testImplementation 'junit:junit:4.12'
@@ -74,9 +79,7 @@ dependencies {
 
 
 
-    //arouter
-    api 'com.alibaba:arouter-api:1.4.1'
-    annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
+
 
 
 
@@ -110,7 +113,7 @@ dependencies {
     api 'io.supercharge:shimmerlayout:2.1.0'
 
 
-    
+
 
 
 

@@ -5,7 +5,7 @@ import android.app.Application;
 /**
  * des：
  * author：onexzgj
- * time：2019/3/24
+ * time：2018/3/24
  */
 public interface IAppComponent {
 

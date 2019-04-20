@@ -26,10 +26,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
 
-
-
-
-
         Button btnAmMeiz = findViewById(R.id.btn_am_meizi);
         btnAmMeiz.setOnClickListener(this);
 
@@ -109,7 +105,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @TargetApi(23)
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-        // TODO Auto-generated method stub
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
     }

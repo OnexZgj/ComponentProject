@@ -8,7 +8,6 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/LitePal-master" />
             <option value="$PROJECT_DIR$/live" />
             <option value="$PROJECT_DIR$/login" />
             <option value="$PROJECT_DIR$/main" />

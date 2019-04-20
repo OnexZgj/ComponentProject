@@ -12,8 +12,6 @@ import com.onexzgj.onexlibrary.lib.IAppComponent;
 import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.Logger;
 
-
-
 /**
  * Created by OnexZgj on 2017/9/1.
  * <p>

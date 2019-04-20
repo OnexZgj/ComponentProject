@@ -3,7 +3,7 @@ package com.onexzgj.onexlibrary.lib;
 /**
  * des：服务提供者
  * author：onexzgj
- * time：2019/3/24
+ * time：2018/3/24
  */
 public class ServiceFactory {
     private static final ServiceFactory ourInstance = new ServiceFactory();
